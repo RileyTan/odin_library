@@ -103,26 +103,26 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 50px;
-    gap: 10px;
+    gap: 70px;
 }
 
+.book-card #identifier {
+    overflow: hidden;
+    font-size: 1.5rem;
+}
 .book-card {
-    background-color: rgba(255,255,255,0.8);
-    padding: 20px 20px;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid; 
+    height: 300px;
+    width: 250px;
+    grid-template-rows: 150px 1px auto auto;
     gap: 10px;
-    width: 300px;
-    height: 400px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px 10px;
+
 }
 
-.book-card #buttons {
-    align-self: center;
-    font-size: 1.2rem;
-}
 .book-card button {
     margin: 0 5px;
     width: 100px;
+    font-size: 1.2rem;
 }

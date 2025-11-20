@@ -66,8 +66,9 @@ const display = () => {
                 <div id="identifier">
                     <h4>${book.title}</h4>
                     <h6>by ${book.author}<h6> 
+                    
                 </div>
-                
+                <hr>
                 <p>${book.pages} pages</p>
                 <div id="buttons">
                     <button class="read-status ${book.read}" data-book-id="${book.id}">Read</button>
