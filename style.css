@@ -1,0 +1,128 @@
+/*
+* =============================================
+*   CSS Reset
+* =============================================
+*/
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+* =============================================
+*   General layout
+* =============================================
+*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    flex: 1;
+    background-color: #E9C1AF;
+}
+main {
+    flex: 4;
+    background-color: rgb(230, 230, 230);
+}
+
+/*
+* =============================================
+*   Sidebar layout
+* =============================================
+*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* =============================================
+*   Main layout
+* =============================================
+*/
+
+button.read-status.read {
+    background-color: greenyellow;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    gap: 10px;
+}
+
+.book-card {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 20px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.book-card #buttons {
+    align-self: center;
+    font-size: 1.2rem;
+}
+.book-card button {
+    margin: 0 5px;
+    width: 100px;
+}

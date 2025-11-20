@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside id="sidebar">
+        <h2>Add New Book</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="title">Title:<span aria-label="required">*</span></label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" min="1" required>
+            </div>
+            <fieldset class="form-group">
+                <legend>Reading Status</legend>
+
+                <div class="radio-option">
+                    <input type="radio" name="read" id="yes" value="read">
+                    <label for="yes">Read</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="read" id="no" value="">
+                    <label for="no">Not Read</label>
+                </div>
+            </fieldset>
+            <button type="submit">Add</button>
+        </form>
+    </aside>
+    <main id="cards-container">
+        <h2>Collection</h2>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
