@@ -103,7 +103,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 50px;
-    gap: 70px;
+    gap: 20px;
 }
 
 .book-card #identifier {
